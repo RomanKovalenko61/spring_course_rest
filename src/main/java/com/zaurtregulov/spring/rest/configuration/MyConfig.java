@@ -15,8 +15,8 @@ import java.util.Properties;
 
 @Configuration
 @ComponentScan(basePackages = "com.zaurtregulov.spring.rest")
-@EnableWebMvc
-@EnableTransactionManagement
+@EnableWebMvc // <mvc:annotation-driven>
+@EnableTransactionManagement // <tx:annotation-driven transaction-manager="transactionManager"/>
 public class MyConfig {
 
     @Bean
